@@ -11,6 +11,7 @@ public class IndexController {
     public String index(Model model) {
         model.addAttribute("titulo", "Hola Mundo!");
         model.addAttribute("titulo2", "Desarrollo de aplicaciones empresariales con Springboot");
+        model.addAttribute("titulo3", "Anuar Avalos Orozco Grupo E2");
 
         return "index";
     }
