@@ -1,24 +1,22 @@
-package com.uvm.springboot.entity;
+package com.uvm.springboot.domain;
 
-public class AlumnoEntity {
+public class Alumno {
 
     private Integer matricula;
     private String nombre;
     private String apellido;
     private String direccion;
-    private String distrito;
     private String telefono;
     private String email;
 
-    public AlumnoEntity() {
+    public Alumno() {
     }
 
-    public AlumnoEntity(Integer matricula, String nombre, String apellido, String direccion, String distrito, String telefono, String email) {
+    public Alumno(Integer matricula, String nombre, String apellido, String direccion, String telefono, String email) {
         this.matricula = matricula;
         this.nombre = nombre;
         this.apellido = apellido;
         this.direccion = direccion;
-        this.distrito = distrito;
         this.telefono = telefono;
         this.email = email;
     }
@@ -55,14 +53,6 @@ public class AlumnoEntity {
         this.direccion = direccion;
     }
 
-    public String getDistrito() {
-        return distrito;
-    }
-
-    public void setDistrito(String distrito) {
-        this.distrito = distrito;
-    }
-
     public String getTelefono() {
         return telefono;
     }
@@ -78,5 +68,4 @@ public class AlumnoEntity {
     public void setEmail(String email) {
         this.email = email;
     }
-
 }
